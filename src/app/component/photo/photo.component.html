@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <div>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/principal"></ion-back-button>
+      </ion-buttons>
+      <img src="assets/img/DuocUC.png" width="50%" height="50%" />
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="takePicture()">Tomar foto</ion-button>
+  <img [src]="imageUrl" *ngIf="imageUrl" alt="Foto capturada" />
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>Todos los derechos reservados a DuocUC 2024</p><br>
+    <a href="https://www.instagram.com/duocucsanjoaquin/" target="_blank" rel="noopener noreferrer">Haz click aquí siguenos en Instagram</a><br>
+    <a href="https://www.youtube.com/c/DuocUCSedeSanJoaqu%C3%ADn" target="_blank" rel="noopener noreferrer">Haz click aquí siguenos en Youtube</a><br>
+    <p>Sede San Joaquin</p>
+  </ion-toolbar>
+</ion-footer>

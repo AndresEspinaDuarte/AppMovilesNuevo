@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>listaVehiculos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let v of vehiculos">
+    <h2>Patente: {{v.patente}}</h2>
+    <h2>marca: {{v.marca}}</h2>
+    <h2>Modelo: {{v.modelo}}</h2>
+    <h2>Año: {{v.anio}}</h2>
+    <h2>Color: {{v.color}}</h2>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>Todos los derechos reservados a DuocUC 2024</p><br>
+    <a href="https://www.instagram.com/duocucsanjoaquin/" target="_blank" rel="noopener noreferrer">Haz click aquí siguenos en Instagram</a><br>
+    <a href="https://www.youtube.com/c/DuocUCSedeSanJoaqu%C3%ADn" target="_blank" rel="noopener noreferrer">Haz click aquí siguenos en Youtube</a><br>
+    <p>Sede San Joaquin</p>
+  </ion-toolbar>
+</ion-footer>
